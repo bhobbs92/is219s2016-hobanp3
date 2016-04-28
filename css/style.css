@@ -108,6 +108,14 @@ body {
     transition: background 500ms;
 }
 
+.likes 
+{
+  background-color: #008700;
+  color: #ffffff;
+}
+
+
+
 /* This makes sure your Github Button is centered */
 .footer {
     text-align: center;
