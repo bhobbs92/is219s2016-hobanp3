@@ -88,6 +88,48 @@ app.controller('HomeController', ['$scope', function($scope) {
       likes:	812,
       dislikes:	101,
       posterindex: 0
+	},
+    { 
+      title:	'Titanic', 
+      iscore:	7.7,
+      rating:	'PG-13',
+      runtime:	194,
+      released:	new Date('1997', '12', '19'),
+      country:	'USA',
+      posters:	['img/titanic.jpg','img/titanic2.jpg','img/titanic3.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0120338/',
+      website:	'http://www.paramount.com/movies/titanic',
+      likes:	1012,
+      dislikes:	101,
+      posterindex: 0
+	},
+    { 
+      title:	'Harry Potter and the Deathly Hallows Part2', 
+      iscore:	8.1,
+      rating:	'PG-13',
+      runtime:	130,
+      released:	new Date('2011 ', '07', '15'),
+      country:	'USA',
+      posters:	['img/hp.jpg','img/hp2.jpg','img/hp3.jpg'],
+      imdb:		'http://www.imdb.com/title/tt1201607/?ref_=nv_sr_2',
+      website:	'https://www.warnerbros.co.uk/movies/harry-potter-and-the-deathly-hallows-part-2',
+      likes:	1312,
+      dislikes:	91,
+      posterindex: 0
+	},
+	{ 
+      title:	'Star Wars the Empire Strikes Back', 
+      iscore:	8.8,
+      rating:	'PG',
+      runtime:	124,
+      released:	new Date('1980', '06', '20'),
+      country:	'USA',
+      posters:	['img/sw1.jpg','img/sw2.jpg','img/sw3.jpg'],
+      imdb:		'http://www.imdb.com/title/tt0080684/',
+      website:	'http://www.starwars.com/films/star-wars-episode-v-the-empire-strikes-back',
+      likes:	982,
+      dislikes:	111,
+      posterindex: 0
 	}
 	
   ];
