@@ -169,7 +169,7 @@ app.controller('HomeController', ['$scope', function($scope) {
      //index=$scope.movies[index].posters;
           
       
-  //Makes sure it loops the images
+      //Makes sure it loops the images
     if ($scope.movies[index].posterindex > $scope.movies[index].posters.length - 1) {
        $scope.movies[index].posterindex = 0;
     } else {
