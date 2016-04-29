@@ -42,13 +42,13 @@
               
               <img class="poster"  ng-src="{{movie.posters[movie.posterindex]}}"  ng-click="posterClick($index)">
  
-					<div class="imageInfo"   > {{movie.posterindex}}</div>
+					<div class="imageInfo"> Poster {{movie.posterindex}} of {{movie.posters.length}}</div>
 					
 					<p class="title">{{movie.title}} ({{movie.country}})</p> 
 					<p class="score"><i class="fa fa-star" aria-hidden="true"></i> {{movie.iscore}} </p>
 					<p class="runtime">Runtime: {{timeText(movie.runtime)}}</p> 
 					<p class="released">Released: {{movie.released| date:'MM/dd/yyyy'}} | Rated: {{movie.rating}}</p>
-					<p class="websites">Websites: <a>{{movie.imdb}}</a> | <a>{{movie.website}}</a></p><br>
+					<p class="websites">Websites: <a ng-href = {{movie.imdb}}>{{movie.imdb}}</a> | <a ng-href = {{movie.website}}>{{movie.website}}</a></p><br>
 					
 		            <div class="social">
 		              <p class="likes" ng-click="like($index)" ><i class="fa fa-thumbs-up" aria-hidden="true" ></i> {{movie.likes}}</p>
