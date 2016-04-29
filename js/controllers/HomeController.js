@@ -90,7 +90,6 @@ app.controller('HomeController', ['$scope', function($scope) {
       posterindex: 0
 	}
 	
-	
   ];
 	
 	
@@ -110,13 +109,49 @@ app.controller('HomeController', ['$scope', function($scope) {
 	
 	
 	/* ADD FUNCTIONS FOR STEP 7 HERE */
-		
-	
-	
-	
-	
-	
-	
+    
+	$scope.like = function(index) {
+        
+            $scope.movies[index].likes++;
+            
+        };
+	$scope.dislike = function(index) {
+        
+            $scope.movies[index].dislikes--;
+            
+        };
+  
+      
+    $scope.posterClick = function(index) 
+    {
+     //index=$scope.movies[index].posters;
+          
+      
+  //Makes sure it loops the images
+    if ($scope.movies[index].posterindex > $scope.movies[index].posters.length - 1) {
+       $scope.movies[index].posterindex = 0;
+    } else {
+        $scope.movies[index].posterindex++;
+
+    }
+      
+      
+
+    };
+  
+  $scope.timeText= function(minutes)
+  {
+   
+  
+ $scope.hours = (Math.floor(Math.abs(minutes) / 60));  
+$scope.minutes = (Math.abs(minutes) % 60);  
+  
+ return  $scope.hours +'hrs '+$scope.minutes + 'min';  
+  
+    } ; 
+  
+
+  
 	
 	
 }]);
